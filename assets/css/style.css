@@ -1,0 +1,129 @@
+body {
+  /* image for background */
+  /* text color and information*/
+  color: #777;
+  margin: 0;
+  font-size: 1em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: url('../images/low_contrast_linen/low_contrast_linen.png');
+}
+
+.container {
+  width: 80%;
+  align-content: center;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/* center text in footers */
+footer {
+  text-align: center;
+}
+
+.masthead {
+  /* set text properties with contrasting colors */
+  padding: 0;
+  background-color: #fff;
+  /* ensures that the entire top of the screen is covered */
+  width: 100%;
+  /* pushes to mthe top and the sides */
+}
+
+.masthead-name {
+  color: #fff;
+  background-color: #4aaaa5;
+  /* color: #4CA8C2; */
+  /* color: #4CA8C2; */
+  /* color: #4CC29A; */
+  /* color: #48B873; */
+  float: left;
+  margin-left: 10%;
+  margin-top: 10px;
+  font-size: 30px;
+  align-content: left;
+}
+
+.masthead-menu {
+/* Add a black background color to the top navigation */
+  overflow: hidden;
+  align-content: right;
+  border-bottom: solid;
+  border-bottom-color: #ccc;
+}
+  
+/* Style the links inside the navigation bar */
+.masthead-menu a {
+  float: right;
+  color: #777;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+  
+/* Change the color of links on hover */
+.masthead-menu a:hover {
+  background-color: #4Cabc2;
+  color: #fff;
+  /* color: #343434; */
+}
+  
+/* Add a color to the active/current link */
+.masthead-menu a.active {
+  background-color: #a69db3;
+  /* color: #343434; */
+}
+
+#details,
+#bio-image {
+    float: left;
+    padding: 0 1em 0 0;
+    /* background-color: #ada49a; */
+}
+/* 
+.masthead-heading {
+    margin-top: -0.2em;
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.details {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.details > p {
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.details > h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 2em 0 1em 0;
+}
+
+section > h1 {
+    margin-top: 2em;
+}
+
+#footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #111111;
+  text-decoration: none;
+}
+
+#footer a {
+  color: #ffffff;
+}
+.social > li {
+  display: inline-block;
+  margin: 0 5px;
+}
+*/

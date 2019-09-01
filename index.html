@@ -5,35 +5,35 @@
 <head>
     <meta charset="utf-8">
     <title>Portfolio for Gabe Pettus</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <!-- body section needs to have the background tied to it -->
 <body>
-  <!-- masthead section needs to have the background color and maybe a better name -->
   <!-- masthead should have a bottom border -->
-    <header class='masthead'>
-      <a class="bigBackLight">Gabe Pettus</a>
-      <!-- top nav will provide the highlight over the selectable section -->
-      <div class="topnav">
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </div>
-  <!-- does the grey line need to be a seperate div? -->
-      <!-- It seems like this is unnessecary and this should be a modifier on the masthead -->
-      <div>
-        <a class="grayLine"></a>
-      </div>
-    </header>
+  <header class='masthead'>
+    <div class='masthead-name'>
+      <strong>Gabe Pettus</strong>
+    </div>
 
+    <!-- top nav will provide the highlight over the selectable section -->
+    <div class='masthead-menu'>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <div class='container'>
     <!-- details section will have about me title, rule, my picture, and the texxt about me -->
-    <section class="details">
-      <h1 class='masthead-heading'>About Me</h1>
-      <!-- horizontal line -->
-      <hr>
+    <h1>About Me</h1>
+    <!-- horizontal line -->
+    <hr>
+      <section id="details">
       <p>
         <!-- how do the links work. THis image is in git so is the link relitive to the directory its checked into (terminology) -->
         <img src="./assets/images/pictureOfMeCropped.jpg" 
+             id="bio-image"
              alt="Displayed is a picture of me, how handsome."
              style="width:10%;height:10%;"
         >
@@ -48,11 +48,11 @@
         And more still if you are not bored yet
       </p>
     </section>
-<!-- like the masthead section this will define the grey background and the teal border line-->
+    <hr>
     <footer id="footer">
-<!-- needs to be grey and centered-->
       <footerText>Copyright@</footerText>
     </footer>
+   </div> 
 </body>
 
 </html>
