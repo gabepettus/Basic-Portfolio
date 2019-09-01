@@ -12,15 +12,17 @@
 <body>
   <!-- masthead should have a bottom border -->
   <header class='masthead'>
-    <div class='masthead-name'>
-      <strong>Gabe Pettus</strong>
-    </div>
+    <div class='masthead-position'>
+      <div class='masthead-name'>
+        <strong>Gabe Pettus</strong>
+      </div>
 
-    <!-- top nav will provide the highlight over the selectable section -->
-    <div class='masthead-menu'>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
+      <!-- top nav will provide the highlight over the selectable section -->
+      <div class='masthead-menu'>
+       <a href="#about">About</a>
+       <a href="#portfolio">Portfolio</a>
+       <a href="#contact">Contact</a>
+      </div>
     </div>
   </header>
 
@@ -28,15 +30,13 @@
     <!-- details section will have about me title, rule, my picture, and the texxt about me -->
     <h1>About Me</h1>
     <!-- horizontal line -->
-    <hr>
-      <section id="details">
+    <section id="details">
       <p>
-        <!-- how do the links work. THis image is in git so is the link relitive to the directory its checked into (terminology) -->
-        <img src="./assets/images/pictureOfMeCropped.jpg" 
-             id="bio-image"
-             alt="Displayed is a picture of me, how handsome."
-             style="width:10%;height:10%;"
-        >
+      <!-- how do the links work. THis image is in git so is the link relitive to the directory its checked into (terminology) -->
+      <img src="./assets/images/pictureOfMeCropped.jpg" 
+           id="bio-image"
+           alt="Displayed is a picture of me, how handsome."
+           style="width:10%;height:10%;" >
         This is where the text about me goes. My background my history, my fears my desires
         of course if there is something else that i shoudl say about me it is not going to be very
         easy to figure it out since i cant actually think of what to say.
@@ -48,11 +48,12 @@
         And more still if you are not bored yet
       </p>
     </section>
-    <hr>
-    <footer id="footer">
-      <footerText>Copyright@</footerText>
-    </footer>
-   </div> 
+    <!-- push used to create sticky footer -->
+  </div> 
+
+  <footer class="footer stickyfooter">
+    <footerText>Copyright@</footerText>
+  </footer>
 </body>
 
 </html>
