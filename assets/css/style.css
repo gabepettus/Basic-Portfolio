@@ -1,20 +1,107 @@
 html {
   height: 100%;
 }
+
 body {
   /* image for background */
-  font-family: Arial, Helvetica, sans-serif;
-
-  /* hieght and margin set to support sticky footer */
-  margin: 0;
-  font-size: 1em;
   background-image: url('../images/low_contrast_linen/low_contrast_linen.png');
+
+  /* font parameters */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+
+  /* removes body image around page content (the margins ) */
+  margin: 0;
+  /* ensures that entire web page is filled with context */
   height: 100%;
 
+  /* creates a flex container and a child container of each contained element, each contain aligns next to the previous in this case in a column*/
+  /* TODO learn more about this: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox */
   display: flex;
   flex-direction: column;
 }
 
+/* defines heading bar at top of screen */
+.heading {
+  background-color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+  /* ensures that the entire top of the screen is covered */
+  width: 100%;
+
+  /* pushes to mthe top and the sides */
+  border-bottom: solid;
+  border-bottom-color: #ccc;
+}
+
+/* positions context (name and menu) within the heading.  */
+/* TODO: understand why the container seems to inherit width from this */
+.heading-content-position {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 960px;
+}
+
+.heading-name {
+  background-color: #4aaaa5;
+  color: #fff;
+
+  /* other color options in teal color family */
+  /* color: #4CA8C2; */
+  /* color: #4CA8C2; */
+  /* color: #4CC29A; */
+  /* color: #48B873; */
+
+  /* float the element so that it remains to the left of the next element */
+  float: left;
+
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.heading-menu {
+/* pushes element to the right of the screem */
+  align-content: right;
+}
+  
+/* Style the anchors inside the navigation bar */
+.heading-menu a {
+  /* pushes element content to the left */
+  float: right;
+
+  /* pushes text to center of header */
+  margin-top: 20px;
+  padding: 0px 5px;
+
+  /* text formating */
+  /* prevents links from being underlined */
+  text-decoration: none;
+  text-align: center;
+  font-size: 10px;
+  color: #777;
+}
+
+/* Change the color of links on hover */
+.heading-menu a:hover {
+  background-color: #4Cabc2;
+  color: #fff;
+}
+  
+/* Add a color to the active/current link */
+/* TODO this is not working */
+.heading-menu a.active {
+  background-color: #a69db3;
+}
+
+/* adds bar between elements */
+.menuSeperator {
+  border-left: solid 1px;
+  border-left-color: #c7c7c7;
+}
+
+/* Ends heading bar at top of screen styles*/
+
+/* Defines primary page content styles */
 .container {
   font-family: Arial, Helvetica, sans-serif;
   flex: 1 0 auto;
@@ -23,13 +110,6 @@ body {
   background-color: #fff;
   width: 960px;
   margin: 2% 0;
-}
-
-.masthead-position {
-  align-content: center;
-  margin: 0 auto;
-  background-color: #fff;
-  width: 960px;
 }
 
 /* center text in footers */
@@ -48,64 +128,6 @@ body {
   flex-shrink: 0;
 }
 
-.masthead {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 0;
-  background-color: #fff;
-  /* ensures that the entire top of the screen is covered */
-  width: 100%;
-  /* pushes to mthe top and the sides */
-  border-bottom: solid;
-  border-bottom-color: #ccc;
-}
-
-
-.masthead-name {
-  color: #fff;
-  background-color: #4aaaa5;
-  /* color: #4CA8C2; */
-  /* color: #4CA8C2; */
-  /* color: #4CC29A; */
-  /* color: #48B873; */
-  float: left;
-  margin-top: 10px;
-  font-size: 30px;
-  align-content: left;
-}
-
-.masthead-menu {
-/* Add a black background color to the top navigation */
-  align-content: right;
-}
-  
-/* Style the links inside the navigation bar */
-.masthead-menu a {
-  float: right;
-  color: #777;
-  text-align: center;
-  margin-top: 20px;
-  padding: 0px 5px;
-  text-decoration: none;
-  font-size: 10px;
-}
-
-/* Change the color of links on hover */
-.masthead-menu a:hover {
-  background-color: #4Cabc2;
-  color: #fff;
-  /* color: #343434; */
-}
-  
-/* Add a color to the active/current link */
-.masthead-menu a.active {
-  background-color: #a69db3;
-  /* color: #343434; */
-}
-
-.menuSeperator {
-  border-left: solid 1px;
-  border-left-color: #c7c7c7;
-}
 
 #details,
 #bio-image {
