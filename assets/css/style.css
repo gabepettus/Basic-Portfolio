@@ -123,8 +123,8 @@ body {
   height: 50px;
   /* pushes to mthe top and the sides */
   border-top: solid;
-  border-top-color: #4cabc2;
-  border-top-width: 10px;
+  border-top-color: #4aaaa5;
+  border-top-width: 8px;
   flex-shrink: 0;
 }
 
