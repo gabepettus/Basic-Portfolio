@@ -21,6 +21,7 @@ body {
   flex-direction: column;
 }
 
+
 /* defines heading bar at top of screen */
 .heading {
   background-color: #fff;
@@ -93,7 +94,7 @@ body {
   background-color: #a69db3;
 }
 
-/* adds bar between elements */
+/* adds vertical bar between elements */
 .menuSeperator {
   border-left: solid 1px;
   border-left-color: #c7c7c7;
@@ -101,7 +102,7 @@ body {
 
 /* Ends heading bar at top of screen styles*/
 
-/* Defines primary page content styles */
+/* Starts Definitions primary page content styles */
 .container {
   font-family: Arial, Helvetica, sans-serif;
   flex: 1 0 auto;
@@ -110,27 +111,50 @@ body {
   background-color: #fff;
   width: 960px;
   margin: 2% 0;
+  padding: 20px;
 }
 
-/* center text in footers */
-.footer {
-  text-align: center;
-  /* set text properties with contrasting colors */
-  padding: 0;
-  background-color: #666;
-  /* ensures that the entire top of the screen is covered */
-  width: 100%;
-  height: 50px;
-  /* pushes to mthe top and the sides */
+/* adds horizontal line below title */
+#details {
   border-top: solid;
-  border-top-color: #4aaaa5;
-  border-top-width: 8px;
-  flex-shrink: 0;
+  border-color: #ccc;
 }
 
-
+/* sets flow parameters */
 #details,
 #bio-image {
     float: left;
+    /* adds padding between text and image (float boxes) */
     padding: 0 1em 0 0;
 }
+
+/* Ends Definitions for primary page content styles */
+
+/* Starts Definitions for footer page content styles */
+.footer {
+  /* ensure footer spans entire screen */
+  width: 100%;
+
+  /* set text properties */
+  text-align: center;
+  background-color: #666;
+
+  /* sets height of footer*/
+  height: 50px;
+
+  /* sets properties for footer border*/
+  border-top: solid;
+  border-top-color: #4aaaa5;
+  border-top-width: 8px;
+
+  /* pushes to the top and the sides */
+  flex-shrink: 0;
+}
+
+.footer-text {
+  padding-top: 36px;
+  font-size: 10px;
+  font-color: #777;
+}
+
+/* Ends Definitions for footer page content styles */
