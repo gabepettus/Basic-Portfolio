@@ -118,6 +118,7 @@ body {
 #details {
   border-top: solid;
   border-color: #ccc;
+  width :100%;
 }
 
 /* sets flow parameters */
@@ -125,7 +126,18 @@ body {
 #bio-image {
     float: left;
     /* adds padding between text and image (float boxes) */
-    padding: 0 1em 0 0;
+    /* TODO reconcile these on bio image and context */
+    padding: 0 1em 0;
+    /* padding: 0 1em -1em 0; */
+}
+
+input {
+  width: 100%;
+}
+textarea {
+  margin: 0px; 
+  width: 960px; 
+  height: 100px;
 }
 
 /* Ends Definitions for primary page content styles */
@@ -154,7 +166,7 @@ body {
 .footer-text {
   padding-top: 36px;
   font-size: 10px;
-  font-color: #777;
+  color: #777;
 }
 
 /* Ends Definitions for footer page content styles */

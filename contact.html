@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact info for Gabe Pettus</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<!-- body section needs to have the background tied to it -->
+<body>
+  <!-- heading should have a bottom border -->
+  <header class='heading'>
+    <!-- position context within the header -->
+    <div class='heading-content-position'>
+      <div class='heading-name'>
+        <strong>Gabe Pettus</strong>
+      </div>
+
+      <!-- top nav will provide the highlight over the selectable section -->
+      <!-- TODO: understand why the order of anchors nots not match -->
+      <div class='heading-menu'>
+       <a href="#portfolio" class='menuSeperator'>Portfolio</a>
+       <a href="#contact"  class='menuSeperator'>Contact</a>
+       <a href="#about">About</a>
+      </div>
+    </div>
+  </header>
+
+  <div class='container'>
+    <h1>Contact</h1>
+    <!-- need to work on auto size and size of textarea -->
+    <section id="details">
+        <p>
+            <label for="name">Name</label> 
+            <br>
+            <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+            <label for="email">Email</label> 
+            <br>
+            <input type="text" id="email" name="email" required>
+        </p>  
+        <p>
+            <label for="message">Message</label> 
+            <br>
+           <textarea id="message" name="message" required> </textarea>
+        </p>  
+        <button type="button">Submit</button>
+
+    </section>
+    <!-- push used to create sticky footer -->
+  </div> 
+
+  <footer class="footer">
+    <div class="footer-text">Copyright@ </div>
+  </footer>
+</body>
+
+</html>
