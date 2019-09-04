@@ -125,10 +125,12 @@ body {
 input {
   width: 100%;
 }
-textarea {
-  margin: 0px; 
-  width: 960px; 
+
+/* TODO need to fix height on textarea */
+.textarea-wrapper {
+  width: 920px; 
   height: 100px;
+  bottom: 0;
 }
 
 /* Ends Definitions for primary page content styles */
