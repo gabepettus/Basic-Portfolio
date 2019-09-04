@@ -27,9 +27,6 @@ body {
   background-color: #fff;
   font-family: Georgia, 'Times New Roman', Times, serif;
 
-  /* ensures that the entire top of the screen is covered */
-  width: 100%;
-
   /* pushes to mthe top and the sides */
   border-bottom: solid;
   border-bottom-color: #ccc;
@@ -37,27 +34,24 @@ body {
 
 /* positions context (name and menu) within the heading.  */
 /* TODO: understand why the container seems to inherit width from this */
+/* need to remove border below this */
 .heading-content-position {
   background-color: #fff;
-  margin: 0 auto;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   width: 960px;
+  /* to align with box below container which is padding 10  */
 }
 
 .heading-name {
-  background-color: #4aaaa5;
-  color: #fff;
-
-  /* other color options in teal color family */
-  /* color: #4CA8C2; */
-  /* color: #4CA8C2; */
-  /* color: #4CC29A; */
-  /* color: #48B873; */
-
   /* float the element so that it remains to the left of the next element */
   float: left;
 
-  margin-top: 10px;
+  background-color: #4aaaa5;
   font-size: 30px;
+  color : #fff;
+  padding: 20px;
 }
 
 .heading-menu {
@@ -109,26 +103,23 @@ body {
   align-content: center;
   align-self: center;
   background-color: #fff;
-  width: 960px;
+  /* total width of 960 = width of 920 + 20 left padding + 20 right padding */
+  width: 920px;
   margin: 2% 0;
   padding: 20px;
 }
 
 /* adds horizontal line below title */
 #details {
+  float: left;
   border-top: solid;
   border-color: #ccc;
   width :100%;
 }
 
-/* sets flow parameters */
-#details,
 #bio-image {
-    float: left;
-    /* adds padding between text and image (float boxes) */
-    /* TODO reconcile these on bio image and context */
-    padding: 0 1em 0;
-    /* padding: 0 1em -1em 0; */
+  float: left;
+  padding-right: 1em;
 }
 
 input {
