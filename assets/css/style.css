@@ -126,6 +126,17 @@ input {
   width: 100%;
 }
 
+.my-button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    background-color: #4aaaa5;
+    width: 100px;
+}
+
 /* TODO need to fix height on textarea */
 .textarea-wrapper {
   width: 920px; 
