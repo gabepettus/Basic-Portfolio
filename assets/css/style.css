@@ -144,6 +144,33 @@ input {
   bottom: 0;
 }
 
+.product {
+  width: 210px;
+  height: 140px;
+  margin: 10px;
+  float: left;
+}
+
+.image-formatter {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -30px;
+}
+
+.product-label {
+  position: relative;
+  margin: 0;
+  top: 100px;
+  width: 210px;
+  padding: 5px 0;
+  font-size: 20px;
+  background-color: #4aaaa5;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+}
+
 /* Ends Definitions for primary page content styles */
 
 /* Starts Definitions for footer page content styles */
