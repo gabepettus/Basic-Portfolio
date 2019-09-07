@@ -197,8 +197,9 @@ input {
 
 .footer-text {
   padding-top: 36px;
+  padding-bottom: 8px;
   font-size: 10px;
-  color: #777;
+  color: #fff;
 }
 
 /* Ends Definitions for footer page content styles */
