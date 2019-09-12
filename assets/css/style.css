@@ -21,6 +21,13 @@ body {
   flex-direction: column;
 }
 
+h1 {
+  font-size: 40px;
+}
+
+p {
+  margin-top: 10px;
+}
 
 /* defines heading bar at top of screen */
 .heading {
@@ -115,7 +122,8 @@ body {
   float: left;
   border-top: solid;
   border-color: #ccc;
-  width :100%;
+  width: 100%;
+  margin: 3px;
 }
 
 #bio-image {
