@@ -60,14 +60,13 @@ p {
   background-color: #4aaaa5;
   font-size: 30px;
   color : #fff;
-  padding: 20px;
 }
 
 .heading-menu {
-/* pushes element to the right of the screem */
-  align-content: right;
   /* pushes element content to the left */
   float: right;
+  font-size:10px;
+  padding-top: 10px;
 }
   
 /* Style the anchors inside the navigation bar */
