@@ -58,6 +58,7 @@ p {
   float: left;
 
   background-color: #4aaaa5;
+  padding: 20px;
   font-size: 30px;
   color : #fff;
 }
@@ -65,8 +66,8 @@ p {
 .heading-menu {
   /* pushes element content to the left */
   float: right;
-  font-size:10px;
-  padding-top: 10px;
+  font-size:20px;
+  padding-top: 20px;
 }
   
 /* Style the anchors inside the navigation bar */
@@ -79,7 +80,6 @@ p {
   /* prevents links from being underlined */
   text-decoration: none;
   text-align: center;
-  font-size: 10px;
   color: #777;
 }
 
@@ -93,6 +93,7 @@ p {
 /* TODO this is not working */
 .heading-menu a.active {
   background-color: #a69db3;
+  padding: 20px;
 }
 
 /* adds vertical bar between elements */
